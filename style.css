@@ -1,0 +1,293 @@
+/*!
+Theme Name: SDC Theme
+Author: Zakaria Binsaifullah
+Author URI: https://webackstop.com
+Description: SDC is a slick, light-weight, and super-fast WordPress theme developed with Gutenberg Block Editor that comes with awesome interface, multi-column layouts, eye-catching design, and so on.
+Version: 1.5.0
+Tested up to: 5.7
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: sdc-theme
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+*/
+/* Normalize Core CSS
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+	background-color: #eee;
+	clip: auto !important;
+	clip-path: none;
+	color: #444;
+	display: block;
+	font-size: 1em;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+}
+
+/*
+* Common Style
+*/
+
+a {
+    color: #5fa052;
+}
+
+a, a:hover, a:focus {
+    text-decoration: none !important;
+}
+
+input:focus, textarea:focus, button:focus {
+    outline: none !important;
+}
+
+i.fa {
+    cursor: pointer;
+}
+
+/**
+ * Heading Tags
+ */
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-family: 'Mulish', sans-serif;
+	line-height: 1.4 !important;
+	margin-top: 0;
+}
+
+/**
+ * Paragraph 
+ */
+
+p {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+/*Visibility*/
+
+.visible {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Sticky Header */
+.sticky_header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 9;
+    background: #fff;
+    animation-name: sticky;
+    animation-duration: 0.7s;
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1); 
+}
+
+@keyframes sticky {
+    0% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+/*
+ * Contact form 7 styles
+ * */
+form.wpcf7-form {
+	background: rgba(128,128,128,.8);
+	border-radius: 5px;
+	padding: 30px 30px 0;
+}
+
+form.wpcf7-form input {
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.5);
+    border: none;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+form.wpcf7-form label {
+	color: #fff;
+}
+
+form.wpcf7-form span {
+    width: 100%;
+}
+
+form.wpcf7-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.5);
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    resize: vertical;
+    font-family: 'Mulish';
+    font-size: 14px;
+    color: #fff;
+	height: 100px;
+}
+
+form.wpcf7-form input[type=submit] {
+    background: #222;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.wpcf7-not-valid-tip {
+    color: #650303 !important;
+    margin-top: 3px;
+}
+
+/*
+ * Contact Page Contact form 7 style 
+ * */
+#contact_page form.wpcf7-form {
+	background: #616161;
+	max-width: 600px; 
+	margin: 0 auto;
+}
+
+#contact_page form.wpcf7-form textarea {
+	height: 150px;
+}
